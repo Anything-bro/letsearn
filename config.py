@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6389061663:AAE30LMTrFNwVK4lBitGUZGIZZ7qi1Vtais")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "PUT_VALUE")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "16575077"))
@@ -19,7 +19,7 @@ APP_ID = int(os.environ.get("APP_ID", "16575077"))
 API_HASH = os.environ.get("API_HASH", "1c8c0bcb55c14e0fd8078058966b6a11")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001329041804"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "PUT_VALUE"))
 
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "1702061654"))
@@ -28,7 +28,7 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "1702061654"))
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://devensh12:devensh1234@cluster0.x74masc.mongodb.net/?retryWrites=true&w=majority")
+DB_URI = os.environ.get("DATABASE_URL", "PUT_VALUE")
 DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 
 #force sub channel id, if you want enable force sub
@@ -40,7 +40,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "<b>ʜᴇʟʟᴏ {first} 🖤\n\nɪ ᴀᴍ ʏᴏᴜʀ  kdrama ᴡᴀɪꜰᴜ.. 🥵\n\n-> i love kdrama too\n\n-> ʏᴏᴜ ᴄᴀɴ ᴜɴᴅʀᴇss ᴍᴇ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ kdrama sʜᴀʀᴇᴅ ʙʏ ᴍᴀsᴛᴇʀ(ᴀᴅᴍɪɴs)😈\n\n->ɢᴇᴛ ʏᴏᴜʀ ꜰɪʟᴇs ᴀɴᴅ ᴇɴᴊᴏʏ 🥀</b>")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "1598215463 5906464451").split()):
+    for x in (os.environ.get("ADMINS", "PUT_VALUE").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
